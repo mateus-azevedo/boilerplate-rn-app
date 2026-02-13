@@ -1,7 +1,9 @@
 {
   "expo": {
+    "plugins": ["expo-router"],
     "name": "boilerplate-rn-app",
     "slug": "boilerplate-rn-app",
+    "scheme": "boilerplaternapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
