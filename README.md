@@ -2,10 +2,14 @@
 
 # 🎯 Objetivo da Arquitetura
 
-✔ Modular\
-✔ Escalável\
-✔ Testável\
-✔ Fácil manutenção\
+✔ Modular.
+
+✔ Escalável.
+
+✔ Testável.
+
+✔ Fácil manutenção.
+
 ✔ Separação clara de responsabilidades
 
 ------------------------------------------------------------------------
@@ -64,9 +68,9 @@ core/
 ```
 Significado:
 
-- **config/** → configs globais (env, tema base, flags)
-- **constants/** → strings fixas, enums, rotas
-- **errors/** → classes de erro customizadas
+- **config/** → configs globais (env, tema base, flags).
+- **constants/** → strings fixas, enums, rotas.
+- **errors/** → classes de erro customizadas.
 
 📌 Mentalidade:
 > core é independente dos módulos.
@@ -91,12 +95,12 @@ Cada módulo é independente e possui:
 
 #### Exemplo: modules/planner/
 
--   **components/** → Componentes visuais específicos do módulo\
--   **services/** → Chamadas de API do módulo\
--   **hooks/** → Hooks específicos do módulo\
--   **store/** → Estado local do módulo (Redux/Zustand/etc.)\
--   **types/** → Tipagens TypeScript do módulo\
--   **tests/** → Testes unitários do módulo
+-   **components/** → Componentes visuais específicos do módulo.
+-   **services/** → Chamadas de API do módulo.
+-   **hooks/** → Hooks específicos do módulo.
+-   **store/** → Estado local do módulo (Redux/Zustand/etc.).
+-   **types/** → Tipagens TypeScript do módulo.
+-   **tests/** → Testes unitários do módulo.
 
 Objetivo: Isolamento, escalabilidade e manutenção facilitada.
 
@@ -116,8 +120,8 @@ services/
  ├── __tests__/
  └── api.ts
 ```
-- **tests/** → testes da camada HTTP
-- **api.ts** → instância Axios central
+- **tests/** → testes da camada HTTP.
+- **api.ts** → instância Axios central.
 
 Exemplo: - api.ts → Cliente HTTP centralizado (Axios/fetch) -
 interceptors - configuração de baseURL
@@ -145,11 +149,11 @@ shared/
  ├── theme/
  └── utils/
 ```
-- **tests/** → testes de utilitários e componentes globais
-- **components/** → Componentes globais (Button, Input, etc.) 
-- **hooks/** → Hooks genéricos (useDebounce, useToggle) 
-- **theme/** → cores, tipografia
-- **utils/** → Funções utilitárias (formatDate, validateEmail)
+- **tests/** → testes de utilitários e componentes globais.
+- **components/** → Componentes globais (Button, Input, etc.).
+- **hooks/** → Hooks genéricos (useDebounce, useToggle).
+- **theme/** → cores, tipografia.
+- **utils/** → Funções utilitárias (formatDate, validateEmail).
 
 ------------------------------------------------------------------------
 
